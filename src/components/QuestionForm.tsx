@@ -1,7 +1,6 @@
 import React, { useState } from 'react';
 import { toast } from 'sonner';
 import { Button } from '@/components/ui/button';
-import { Input } from '@/components/ui/input';
 import { Textarea } from '@/components/ui/textarea';
 import { Card, CardContent, CardFooter, CardHeader, CardTitle } from '@/components/ui/card';
 import { Label } from '@/components/ui/label';
@@ -18,16 +17,15 @@ interface QuestionFormProps {
 }
 
 const QuestionForm: React.FC<QuestionFormProps> = ({ onSubmit }) => {
-  const [name, setName] = useState('');
   const [question, setQuestion] = useState('');
   const [isSubmitting, setIsSubmitting] = useState(false);
 
   const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
     
-    if (!name.trim() || !question.trim()) {
-      toast('Please fill in all fields', {
-        description: 'Both name and question are required.',
+    if (!question.trim()) {
+      toast('Please fill in the question field', {
+        description: 'The question field is required.',
       });
       return;
     }
@@ -38,7 +36,7 @@ const QuestionForm: React.FC<QuestionFormProps> = ({ onSubmit }) => {
       // Insert into Supabase
       const { data, error } = await supabase
         .from('questions')
-        .insert([{ name, question }]);
+        .insert([{ question }]);
       
       if (error) throw error;
       
@@ -46,7 +44,6 @@ const QuestionForm: React.FC<QuestionFormProps> = ({ onSubmit }) => {
       onSubmit({ question });
       
       // Reset the form
-      setName('');
       setQuestion('');
       
       toast('Question submitted', {
@@ -70,19 +67,6 @@ const QuestionForm: React.FC<QuestionFormProps> = ({ onSubmit }) => {
         </CardHeader>
         <form onSubmit={handleSubmit}>
           <CardContent className="space-y-6">
-            <div className="space-y-2">
-              {/* <Label htmlFor="name" className="text-sm font-medium">
-                Your Name
-              </Label>
-              <Input
-                id="name"
-                className="input-field h-11"
-                value={name}
-                onChange={(e) => setName(e.target.value)}
-                placeholder="Enter your name"
-                disabled={isSubmitting}
-              /> */}
-            </div>
             <div className="space-y-2">
               <Label htmlFor="question" className="text-sm font-medium">
                 Your Question
