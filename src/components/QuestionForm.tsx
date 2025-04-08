@@ -72,7 +72,7 @@ const QuestionForm: React.FC<QuestionFormProps> = ({ onSubmit }) => {
         <form onSubmit={handleSubmit}>
           <CardContent className="space-y-6">
             <div className="space-y-2">
-              <Label htmlFor="name" className="text-sm font-medium">
+              {/* <Label htmlFor="name" className="text-sm font-medium">
                 Your Name
               </Label>
               <Input
@@ -82,7 +82,7 @@ const QuestionForm: React.FC<QuestionFormProps> = ({ onSubmit }) => {
                 onChange={(e) => setName(e.target.value)}
                 placeholder="Enter your name"
                 disabled={isSubmitting}
-              />
+              /> */}
             </div>
             <div className="space-y-2">
               <Label htmlFor="question" className="text-sm font-medium">
