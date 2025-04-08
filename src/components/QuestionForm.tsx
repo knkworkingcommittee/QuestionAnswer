@@ -9,7 +9,6 @@ import { supabase } from '@/integrations/supabase/client';
 
 export interface Question {
   id: string;
-  name: string;
   question: string;
   timestamp: Date;
 }
@@ -44,7 +43,7 @@ const QuestionForm: React.FC<QuestionFormProps> = ({ onSubmit }) => {
       if (error) throw error;
       
       // Call the local onSubmit handler to update the UI
-      onSubmit({ name, question });
+      onSubmit({ question });
       
       // Reset the form
       setName('');
