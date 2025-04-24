@@ -85,7 +85,7 @@ const Index = () => {
         </div>
         <div className="text-center mb-16 animate-fade-in">
           <p className="text-sm font-medium text-primary mb-2 inline-block px-3 py-1 rounded-full bg-primary/10">Community Questions</p>
-          <h1 className="text-4xl sm:text-5xl font-bold tracking-tight mb-4">Ask Anything on Hypertension</h1>
+          <h1 className="text-4xl sm:text-5xl font-bold tracking-tight mb-4">Ask Anything on Surgical Intervention</h1>
           <p className="text-muted-foreground max-w-xl mx-auto">
             Submit your questions and see what others are asking. 
             Your contribution helps build our knowledge base.
