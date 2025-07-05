@@ -79,7 +79,7 @@ const Index = () => {
     <div className="min-h-screen py-20 px-4 bg-gradient-to-b from-background to-secondary/30">
       <div className="max-w-5xl mx-auto">
         <div className="text-center mb-10">
-          <h1 className="text-5xl font-extrabold text-red-600 animate-pulse tracking-tight">
+          <h1 className="text-5xl font-extrabold text-[#8B5CF6] animate-pulse tracking-tight">
             Blood and Bugs 2025
           </h1>
         </div>
