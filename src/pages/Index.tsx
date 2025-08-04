@@ -80,12 +80,12 @@ const Index = () => {
       <div className="max-w-5xl mx-auto">
         <div className="text-center mb-10">
           <h1 className="text-5xl font-extrabold text-[#8B5CF6] animate-pulse tracking-tight">
-            $ave Neirons & Nephrons 2025
+            $ave Neurons & Nephrons 2025
           </h1>
         </div>
         <div className="text-center mb-16 animate-fade-in">
           <p className="text-sm font-medium text-primary mb-2 inline-block px-3 py-1 rounded-full bg-primary/10">Community Questions</p>
-          <h1 className="text-4xl sm:text-5xl font-bold tracking-tight mb-4">Ask Anything on Haematology and Microbiology</h1>
+          <h1 className="text-4xl sm:text-5xl font-bold tracking-tight mb-4">Ask Anything on Neurology & Nephrology</h1>
           <p className="text-muted-foreground max-w-xl mx-auto">
             Submit your questions and see what others are asking. 
             Your contribution helps build our knowledge base.
