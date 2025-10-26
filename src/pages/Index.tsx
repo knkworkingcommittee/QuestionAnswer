@@ -80,7 +80,7 @@ const Index = () => {
       <div className="max-w-5xl mx-auto">
         <div className="text-center mb-10">
           <h1 className="text-5xl font-extrabold text-[#8B5CF6] animate-pulse tracking-tight">
-            $ave Neurons & Nephrons 2025
+            MedFusion: CME on Multidisciplinary Perspectives in Ayurveda, Homeopathy, and Cardiac Sciences
           </h1>
         </div>
         <div className="text-center mb-16 animate-fade-in">
